@@ -32992,7 +32992,7 @@
 	    var color = tinycolor(data);
 	    var hsl = color.toHsl();
 	    var hsv = color.toHsv();
-	    if (hsl.s === 0) {
+	    if (hsl.s === 0 && oldHue != undefined && oldHue != null) {
 	      hsl.h = oldHue;
 	      hsv.h = oldHue;
 	    }
